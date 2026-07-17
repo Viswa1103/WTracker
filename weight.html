@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="header">
+        <h2>WTracker</h2>
+        <div class="nav-btn-div">
+            <a href="index.html">
+                <button>Dashboard</button>
+            </a>
+            <a href="goals.html">
+                <button>Goals</button>
+            </a>
+            <a href="weight.html">
+                <button class="active">Weight</button>
+            </a>
+            <a href="daily_log.html">
+                <button>Daily log</button>
+            </a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="dash-header">
+            <h1 class="dash-h1">Weight Over Time</h1>
+            <p class="weight-sub">Log whenever you weigh in <br> Lets keep going.</p>
+        </div>
+
+        <div class="weight-content">
+
+            <div class="form-container">
+                <form >
+                    <label >Weight(KG)</label>
+                    <input type="text" id="weight-entry" placeholder="e.g 72.0">
+                    <label>Date</label>
+                    <input type="date" id="date" placeholder="07/07/2026">
+                    <button id="log-data-btn">Log Data</button>
+                </form>
+            </div>
+
+            <div class="weight-display">
+                <h2>Your Weigh-Ins</h2>
+                <div>
+                    <ul class="weight-list">
+                        <!-- <li class="weight-li">
+                            <span>⬤</span>
+                            <span class="weight-text">July 07</span>
+                            <span class="weight-less"> &#9660; 0.6</span>
+                            <span>78.9 kg</span>
+                        </li>
+
+                        <li class="weight-li">
+                            <span>⬤</span>
+                            <span class="weight-text">July 07</span>
+                            <span class="weight-less"> &#9660; 0.6</span>
+                            <span>78.9 kg</span>
+                        </li> -->
+                        
+                        
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>

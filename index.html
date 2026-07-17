@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <h2>WTracker</h2>
+        <div class="nav-btn-div">
+            <a href="index.html">
+                <button class="active">Dashboard</button>
+            </a>
+            <a href="goals.html">
+                <button>Goals</button>
+            </a>
+            <a href="weight.html">
+                <button>Weight</button>
+            </a>
+            <a href="daily_log.html">
+                <button>Daily log</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="user-form-container">
+        <h1>Welcome to the Club!</h1>
+        <p>Please enter the Details</p>
+                <form>
+                    <label>Starting Weight (KG)</label>
+                    <input type="text" id="entry-start-weight" placeholder="e.g 90.0">
+                    <label>Target Weight (KG)</label>
+                    <input type="text" id="entry-target-weight" placeholder="e.g 72.0">
+                    <label>Target Date</label>
+                    <input type="date" id="entry-target-date" placeholder="07/07/2026">
+                    <label>Toatl Step Goals</label>
+                    <input type="text" id="entry-taget-step" placeholder="e.g 10000">
+                    <button id="entry-save-btn">Save Goal</button>
+                </form>
+            </div>
+
+    <main class="main-content">
+        <div class="dash-header">
+            <p class="dash-p">YOUR JOURNEY SO FAR</p>
+            <h1 class="dash-h1">You're 40% of the way there</h1>
+            <p class="dash-sub">You have come a long way Mate!!! <br> Lets keep going.</p>
+        </div>
+
+        <div class="card">
+
+            <div class="track">
+
+                <div class="fill" id="fill"></div>
+
+
+                <span class="tick" style="left: 25%;"></span>
+                <span class="tick" style="left: 50%;"></span>
+                <span class="tick" style="left: 75%;"></span>
+                <div class="start-dot"></div>
+
+                <span class="pin">
+                    <span class="pin-text" id="pin-text">72.8KG</span>
+                    <span class="pin-dot"></span>
+                </span>
+
+
+            </div>
+
+            <div class="card-data">
+                <span> Start <b id="weight-start">90 KG</b></span>
+                <span style="text-align: center;"> You are here <b id="weight-now">86 KG</b></span>
+                <span style="text-align: right;"> Target <b id="weight-target">72.8 KG</b></span>
+
+            </div>
+        </div>
+
+        <div class="dash-footer">
+            <div class="footer-containter">
+                <span>Changed So far</span>
+                <span > <b id="changed-sofar">-4.0 Kg</b></span>
+            </div>
+
+            <div class="footer-containter">
+                <span>Left for Goal</span>
+                <span > <b id="leftkg">9.0 Kg</b></span>
+            </div>
+
+            <div class="footer-containter">
+                <span>Total Days Logged</span>
+                <span > <b id="streak">1</b></span>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

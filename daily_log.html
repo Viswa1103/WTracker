@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <h2>WTracker</h2>
+        <div class="nav-btn-div">
+            <a href="index.html">
+                <button>Dashboard</button>
+            </a>
+            <a href="goals.html">
+                <button>Goals</button>
+            </a>
+            <a href="weight.html">
+                <button>Weight</button>
+            </a>
+            <a href="daily_log.html">
+                <button class="active">Daily log</button>
+            </a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="dash-header">
+            <h1 class="dash-h1">Daily log</h1>
+            <p class="weight-sub">Daily logs help to maintain the tracker <br> Lets keep going.</p>
+        </div>
+
+        <div class="daily-log-nav">
+            <a href="">Caliories</a>
+            <a href="">Workout</a>
+            <a href="">Steps</a>
+        </div>
+
+        <div class="steps-content">
+
+            <div class="form-container">
+                <form class="step-form">
+                    <div class="today-step">
+
+                        <label>Today's Step Count</label>
+                        <input type="text" id="steps-entry" placeholder="e.g 10000">
+                        <span>Enter the total Steps Today</span>
+                        <button id="save-steps-btn">Save Steps</button>
+                    </div>
+
+                    <div class="goal-step">
+                        <label>Daily step Goal</label>
+                        <input type="text" id="steps-entry" placeholder="e.g 10000">
+                        <button>Save Goal</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="steps-display">
+                <h2>Your Total Steps</h2>
+                
+                <div class="progress-ring">
+                    <span id="step-count">0</span>
+                    <span>of 10,000 steps</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <h2>WTracker</h2>
+        <div class="nav-btn-div">
+            <a href="index.html">
+                <button>Dashboard</button>
+            </a>
+            <a href="goals.html">
+                <button class="active">Goals</button>
+            </a>
+            <a href="weight.html">
+                <button>Weight</button>
+            </a>
+            <a href="daily_log.html">
+                <button>Daily log</button>
+            </a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="dash-header">
+            <h1 class="dash-h1">Goals and Milestones</h1>
+            <p class="weight-sub">Thinking of Fresh Start? <br> Lets Start fresh.</p>
+        </div>
+
+        <div class="goal-content">
+
+            <div class="form-container">
+                <form>
+                    <label>Starting Weight (KG)</label>
+                    <input type="text" id="goalPage-start-weight" placeholder="e.g 90.0">
+                    <label>Target Weight (KG)</label>
+                    <input type="text" id="goalPage-target-weight" placeholder="e.g 72.0">
+                    <label>Target Date</label>
+                    <input type="date" id="target-date" placeholder="07/07/2026">
+                    <button id="goalPage-goal-save-btn">Save Goal</button>
+                </form>
+            </div>
+
+            <div class="goal-display">
+                <h2>Your progress</h2>
+                <div class="progress-container">
+                    <div class="progress-container-header">
+                        <h1>40%</h1>
+                        <span>6.0 Kg to go</span>
+                    </div>
+
+                    <div class="progress-track">
+
+                        <div class="fill" id="fill"></div>
+
+
+                        <span class="tick" style="left: 25%;"></span>
+                        <span class="tick" style="left: 50%;"></span>
+                        <span class="tick" style="left: 75%;"></span>
+                        <div class="start-dot"></div>
+
+                        <span class="pin">
+                            <span class="pin-text" id="pin-text">72.8KG</span>
+                            <span class="pin-dot"></span>
+                        </span>
+
+
+                    </div>
+
+                </div>
+                <div class="progress-content">
+                    <div class="progress-list">
+                        <div class="circle"></div>
+                        <span>Reach 81.5 Kg</span>
+                        <span>25%</span>
+                    </div>
+                    <div class="progress-list">
+                        <div class="circle"></div>
+                        <span>Reach 79.0 Kg</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="progress-list">
+                        <div class="circle"></div>
+                        <span>Reach 76.5 Kg</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-list">
+                        <div class="circle"></div>
+                        <span>Reach 72.8 Kg</span>
+                        <span>100%</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
