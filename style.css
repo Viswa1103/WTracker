@@ -554,22 +554,26 @@ form button{
 
     .footer-containter{
     background-color: #FBFCFA;
-    height: 80px;
-    width: 300px;
+    height: 85px;
+    width: 250px;
     padding: 10px;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
     font-family: "Bricolage Grotesque", sans-serif;
     border-radius: 12px;
     border: 1px solid #2E6E5E;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
 
 .dash-footer{
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
-    /* flex-direction: column;
-    align-items: center; */
-    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .dash-h1 {
@@ -669,7 +673,7 @@ form button{
     border-radius: 12px;
     color: #17322B;
     border: 1px solid #2E6E5E;
-    width: 400px;
+    width: 350px;
     position: fixed;
     top: 50%;
     left: 50%;
